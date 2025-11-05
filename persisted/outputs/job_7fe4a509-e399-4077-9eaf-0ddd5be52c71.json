@@ -1,0 +1,6 @@
+{
+  "exitCode": 1,
+  "stdout": "",
+  "stderr": "nonexistentcommand : The term 'nonexistentcommand' is not recognized as the name of a cmdlet, function, script file, \r\nor operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and \r\ntry again.\r\nAt line:1 char:1\r\n+ nonexistentcommand\r\n+ ~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (nonexistentcommand:String) [], CommandNotFoundException\r\n    + FullyQualifiedErrorId : CommandNotFoundException\r\n \r\n",
+  "timestamp": "2025-11-05T10:33:08.810Z"
+}

@@ -1,0 +1,116 @@
+[
+  {
+    "id": "job_c53fd4ca-e587-4643-a890-da2d047308c8",
+    "command": "echo Hello from QueueCTL",
+    "state": "completed",
+    "attempts": 0,
+    "max_retries": 3,
+    "created_at": "2025-11-05T09:56:44.667Z",
+    "updated_at": "2025-11-05T09:56:45.245Z",
+    "last_error": null,
+    "nextRetry": null,
+    "meta": {},
+    "lockedAt": "2025-11-05T09:56:44.975Z",
+    "lockedBy": "worker-1",
+    "result": {
+      "stdout": "Hello\r\nfrom\r\nQueueCTL\r\n",
+      "stderr": "",
+      "exitCode": 0
+    }
+  },
+  {
+    "id": "job_dc2c9fb8-6a89-4480-8813-fa6827a02556",
+    "command": "Start-Sleep -Seconds 3; Write-Output Job done",
+    "state": "completed",
+    "attempts": 0,
+    "max_retries": 3,
+    "created_at": "2025-11-05T09:56:44.870Z",
+    "updated_at": "2025-11-05T09:56:48.286Z",
+    "last_error": null,
+    "nextRetry": null,
+    "meta": {},
+    "lockedAt": "2025-11-05T09:56:44.977Z",
+    "lockedBy": "worker-2",
+    "result": {
+      "stdout": "Job\r\ndone\r\n",
+      "stderr": "",
+      "exitCode": 0
+    }
+  },
+  {
+    "id": "job_4e550520-76c1-428c-b64f-ab3657768eea",
+    "command": "echo 'Hello from demo job 1'",
+    "state": "completed",
+    "attempts": 0,
+    "max_retries": 2,
+    "created_at": "2025-11-05T10:07:48.505Z",
+    "updated_at": "2025-11-05T10:33:05.087Z",
+    "last_error": null,
+    "nextRetry": null,
+    "meta": {},
+    "lockedAt": "2025-11-05T10:33:04.544Z",
+    "lockedBy": "worker-1",
+    "result": {
+      "stdout": "Hello from demo job 1\r\n",
+      "stderr": "",
+      "exitCode": 0
+    }
+  },
+  {
+    "id": "job_7c50575c-49e7-466b-88cf-eb8cbf6aa5b1",
+    "command": "Start-Sleep -Seconds 3; Write-Output 'Demo job 2 done'",
+    "state": "completed",
+    "attempts": 0,
+    "max_retries": 3,
+    "created_at": "2025-11-05T10:07:48.513Z",
+    "updated_at": "2025-11-05T10:33:08.116Z",
+    "last_error": null,
+    "nextRetry": null,
+    "meta": {},
+    "lockedAt": "2025-11-05T10:33:04.546Z",
+    "lockedBy": "worker-2",
+    "result": {
+      "stdout": "Demo job 2 done\r\n",
+      "stderr": "",
+      "exitCode": 0
+    }
+  },
+  {
+    "id": "job_7fe4a509-e399-4077-9eaf-0ddd5be52c71",
+    "command": "nonexistentcommand",
+    "state": "dead",
+    "attempts": 2,
+    "max_retries": 2,
+    "created_at": "2025-11-05T10:07:48.515Z",
+    "updated_at": "2025-11-05T10:33:08.812Z",
+    "last_error": "nonexistentcommand : The term 'nonexistentcommand' is not recognized as the name of a cmdlet, function, script file, \r\nor operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and \r\ntry again.\r\nAt line:1 char:1\r\n+ nonexistentcommand\r\n+ ~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (nonexistentcommand:String) [], CommandNotFoundException\r\n    + FullyQualifiedErrorId : CommandNotFoundException\r\n \r\n",
+    "nextRetry": "2025-11-05T10:33:08.472Z",
+    "meta": {},
+    "lockedAt": "2025-11-05T10:33:08.499Z",
+    "lockedBy": "worker-1"
+  },
+  {
+    "id": "job_825e2090-afcb-4d20-a658-9b4afc311c43",
+    "command": "echo Hello World i am nikhil",
+    "state": "pending",
+    "attempts": 0,
+    "max_retries": 3,
+    "created_at": "2025-11-05T11:47:08.552Z",
+    "updated_at": "2025-11-05T11:47:08.562Z",
+    "last_error": null,
+    "nextRetry": null,
+    "meta": {}
+  },
+  {
+    "id": "job_58b2bc9a-bdeb-4201-bed4-ae07a23ec1ef",
+    "command": "echo Hello",
+    "state": "pending",
+    "attempts": 0,
+    "max_retries": 3,
+    "created_at": "2025-11-05T11:47:35.526Z",
+    "updated_at": "2025-11-05T11:47:35.526Z",
+    "last_error": null,
+    "nextRetry": null,
+    "meta": {}
+  }
+]
