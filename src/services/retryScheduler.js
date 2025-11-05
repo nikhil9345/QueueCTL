@@ -4,22 +4,14 @@ import { sleep } from "../utils/time.js";
 
 dotenv.config();
 
-/**
- * Compute the delay for the next retry attempt using exponential backoff
- * delay = base ^ attempts seconds
- */
 export function computeBackoffSeconds(base, attempts) {
   const a = Math.max(1, attempts);
   const delay = Math.pow(base, a);
-  
-  // Add some jitter to prevent thundering herd
-  const jitter = Math.random() * 0.5 + 0.75; // 75-125% of base delay
+
+  const jitter = Math.random() * 0.5 + 0.75;
   return Math.floor(delay * jitter);
 }
 
-/**
- * Schedule a job for retry with exponential backoff
- */
 export async function scheduleJobRetry(job) {
   try {
     const base = parseInt(process.env.BACKOFF_BASE) || 2;
