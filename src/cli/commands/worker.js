@@ -2,7 +2,6 @@ import { startWorkers, stopAllWorkers } from '../../workers/workerManager.js';
 
 export default async function workerCommand(options) {
   const sub = options && options[0];
-  // commander set up earlier passes options differently; check for start/stop keywords
   if (options && options.count) {
     await startWorkers(options.count);
     return;
